@@ -1,0 +1,16 @@
+public class aasingopr {
+   public static void main(String[]args) {
+       int result=-59;
+       System.out.println("initial value:"+result);
+        result+=10;
+        System.out.println("result+=10:"+ result);
+        result-=10;
+        System.out.println("result-=10:"+ result);
+        result/=10;
+       System.out.println("result/=10:"+ result);
+       result*=10;
+       System.out.println("result*=10:"+ result);
+       result%=10;
+       System.out.println("result%=10:"+ result);
+    }
+}
