@@ -1,0 +1,12 @@
+public class arithopr {
+   public static void main(String[] args) {
+       int num1=10;
+       int num2=24;
+//       arithmetic operator
+       System.out.println("(addition):"+(num1+num2));
+       System.out.println("subtraction:"+(num1-num2));
+       System.out.println("division:"+(num1/num2));
+       System.out.println("multiplication:"+(num1*num2));
+       System.out.println("module:"+(num1%num2));
+   }
+}
