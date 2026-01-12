@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class dowhile1 {
+    public static void Main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your number");
+        float n=sc.nextFloat();
+        float sum=0;
+        do {
+            sum= sum +n;
+            n=sc.nextFloat();
+        }while(n!=0.0);
+        System.out.println("the sum of numbers is "+ sum);
+    }
+}
+
+
+
+import java.util.Scanner;
+public class dowhile1 {
+    public static void Main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a name");
+        String input=sc.nextLine();
+        String concatenationString="";
+
+        do{
+            concatenationString=concatenationString+input;
+            System.out.println("enter next world or 'exit':");
+            input=sc.nextLine();
+
+        }while(!input.equalsIgnoreCase("exit"));
+        System.out.println("final output");
+        System.out.println("the final concatenation string is:"+concatenationString);
+
+
+    }
+}
+
+
+
+
+  
+}
