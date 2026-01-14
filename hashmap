@@ -1,0 +1,16 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class hashlist {
+    public static void main(String[]args){
+        HashMap<Integer,String> map=new HashMap<>();
+        map.put(0,"a");
+        map.put(1,"ruby");
+        map.put(2,"nikshay");
+        System.out.println(map.get(1));
+        System.out.println(map);
+        for(Map.Entry<Integer,String> a:map.entrySet()){
+            System.out.println(a.getKey()+" "+a.getValue());
+        }
+    }
+}
