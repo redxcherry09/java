@@ -1,0 +1,271 @@
+import java.util.Scanner;
+public class pattern {
+    public static void Main(String[]args) {
+//        outer loop
+        int n = 5;
+        int m = 4;
+        for (int i = 0; i < 4; i++) {
+////            inner loop
+            for (int j = 0; j < 5; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//2. print the pattern (hollow box)
+//public class pattern{
+//    public static void Main(String[]args){
+//        int n=4;
+//        int m=5;
+////        outer loop
+//        for(int i=1;i<=n;i++){
+////            inner loop
+//            for(int j=1;j<=m;j++){
+//                //cell i ;j
+//                if(i==1 || j==1 || i==n || j==m){
+//                    System.out.print("*");
+//                }else{
+//                    System.out.print(" ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//3.print half pyramid
+//public class pattern {
+//    public static void Main(String[]args){
+//       int n=6;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//4.reverse
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=6;
+//        for(int i=n;i>=1;i--){
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+
+// 5.  print the pattern (inverted half pyramid)
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=4;
+//        for(int i=1;i<=n;i++) {
+//            for (int j=1; j <= n-i; j++) {
+//                System.out.print(" ");
+//            }
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//6. half pyramid with numbers
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=i;j++){
+//                System.out.print(j+" ");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+//
+////7.reverse
+// public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=n-i+1;j++){
+//                System.out.print(j);
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+
+//or   (not work)------if we start i=0 then '=' is not used and when we use i=1 then we need to use '=' is used.
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=n;i>=1;i--){
+//            for(int j=1;j<=n;j++){
+//                System.out.print(j);
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//8.floyd's ttriangle
+//public class pattern {
+//    public static void Main(String[]args) {
+//        int n = 5;
+//        int number = 1;
+//        for (int i = 1; i <= n; i++) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print(number + " ");
+//                number++;
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//9.  0to1 problem
+
+//public class pattern{
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=i;j++){
+//                int sum=i+j;
+//                if(sum%2==0){
+//                    System.out.print("1 ");
+//                }else{
+//                    System.out.print("0 ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//10. buttefly pattern
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            int spaces=2*(n-i);
+//            for(int j=1;j<=spaces;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+////        lower half
+//        for(int i=n;i>=1;i--){
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            int spaces=2*(n-i);
+//            for(int j=1;j<=spaces;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=i;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+////11.solid rombus (not work)
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+////            spaces
+//            for(int j=1;j<=n-1;j++){
+//                System.out.print(" ");
+//            }
+////            stars
+//            for(int j=1;j<=5;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//12. number pyramid
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=n-1;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=i;j++){
+//                System.out.print(i+" ");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+
+//13.palindrom pyramid  (not perfect)
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=5;
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=n-1;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=i;j>=1;j--){
+//                System.out.print(j);
+//            }
+//            for(int j=1;j<=i;j++){
+////                j=2
+//                System.out.print(j);
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+//
+
+//14.diamond pattern
+
+//public class pattern {
+//    public static void Main(String[]args){
+//        int n=4;
+////        upper half
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=n-1;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=2*i-1;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+////        lower half
+//        for(int i=n;i>=1;i--){
+//            for(int j=1;j<=n-1;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=2*i-1;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+//
