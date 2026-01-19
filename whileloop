@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class whileloop {
+    public static void Main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number");
+        int a=sc.nextInt();
+        int i=1;
+        int fact=1;
+        while(i<=a) {
+            fact = fact *i;
+            i++;
+        }
+            System.out.println(fact);
+
+        }
+    }
+
+
+//sum of two natural numbers
+public class whileloop {
+    public static void Main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number");
+        int n=sc.nextInt();
+        int sum=0;
+        int i=1;
+        while(i<=n){
+            sum=sum+i;
+            i++;
+        }
+        System.out.println("sum ="+sum);
+    }
+}
+
+
+
+//tableprint
+public class whileloop {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number: ");
+        int n=sc.nextInt();
+        int i=1;
+        do {
+            System.out.println(n + "x" + i + "=" + (n * i));
+            i++;
+        } while(i<=10);
+    }
+}
