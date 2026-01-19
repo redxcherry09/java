@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class wrapper {
+    static void main() {
+        int a=21;
+        Integer i=Integer.valueOf(a);
+        Integer j=a;
+//autoboxing
+        int b=i.intValue();
+        int c=i;
+// unboxing
+        System.out.println("primitive=" + a);
+        System.out.println("wrapper class=" + i);
+    }
+}
