@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class swich {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        char bestFriend='H';
+        switch(bestFriend){
+            case 'M':
+                System.out.println("rama");
+                break;
+            case 'T':
+                System.out.println("anjali");
+                break;
+            case 'W':
+                System.out.println("muskan");
+                break;
+            case'H':
+                System.out.println("nikshay");
+                break;
+            default:
+            System.out.println("meenu");
+        }
+
+
+    }
+}
